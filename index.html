@@ -2,21 +2,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Форма выбора категории</title>
+        <link rel="stylesheet" href="CSS/body.css">
+        <link rel="stylesheet" href="CSS/checkbox.css">
+        <script src="JS/app.js"></script>
     </head>
     <body>
-        <h1>🏆 События 🏆</h1>
-        <div>
-            <select name="Категория">
-                <option>Выберите катеогрию спорта</option>
-                <option value="soccer">Футбол</option>
-                <option value="hockey">Хокей</option>
-                <option value="tenis">Тенис</option>
-                <option value="bascketball">Баскетболл</option>
-                <option value="cybersport">Киберспорт</option>
-                <option value="mma">Единоборства</option>
-                <option value="boxing">Бокс</option>
-                <option value="american_football">Футбол</option>
-            </select>
-        </div>
+        <form class="form">
+            <h1 class="form_title">🏆<b>События🏆</b></h1>
+            <div class="form_group">
+                <label class="form_label">Категория:</label>
+                <select class="form_select" name="Выберите категорию:" id="categorySelector">
+                    <option value="soccer">Футбол</option>
+                    <option value="hockey">Хокей</option>
+                    <option value="baskcetball">Баскетбол</option>
+                    <option value="mma">Единоборства</option>
+                    <option value="cybersport">Киберспорт</option>
+                </select>
+                <div class="checkbox_group">
+                    <div class="checkboxcontainer">
+                        <input type="checkbox" class="form_checkbox" id="lineopencheckbox"></input>
+                        <label for="lineopencheckbox">Открытие линии</label>
+                    </div>
+
+                    <div class="checkboxcontainer">
+                        <input type="checkbox" class="form_checkbox" id="coefcheckbox"></input>
+                        <label for="coefcheckbox">Изминение коэфицентов</label>
+                    </div>
+                </div>
+                <button class="form_button" id="submitButton">Выбрать</button>
+            </div>
+        </form>
     </body>
 </html>
