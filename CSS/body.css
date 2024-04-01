@@ -4,7 +4,10 @@ body {
 }
 
 .form {
-    background: linear-gradient(310deg, #5825cf, #3ceee5);
+    background-image: url("Images/HandicapHandicapperLOGObackless.png"), linear-gradient(150deg,#71c3ff, #d8c4f8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
