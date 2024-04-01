@@ -37,17 +37,3 @@ body {
     margin-top: 5px;
     background-color: rgba(255, 255, 255, 0.8);
 }
-
-.form_button {
-    background-color: #fff;
-    color: #7430c2;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.form_button:hover {
-    background-color: #7430c213;
-}
